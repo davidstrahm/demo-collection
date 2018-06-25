@@ -5,7 +5,7 @@
 // We read package.json using a require() call, which is standard JSON.
 {
   // This is just to indicate to your IDE that there is a schema for collection.json.
-  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  // "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
 
   // Schematics are listed as a map of schematicName => schematicDescription.
   // Each description contains a description field which is required, a factory reference,
@@ -16,11 +16,9 @@
   // overwrite the extended schematic factory.
   "schematics": {
     "custom-component": {
-      "aliases": [ "cc" ],
       "factory": "./custom-component",
-      "description": "Create a custom Angular component.",
       "schema": "./custom-component/schema.json",
-      "extends": "@nrwl/schematics"
+      "description": "Create a custom Angular component."
     }
   }
 }
