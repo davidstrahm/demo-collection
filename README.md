@@ -1,28 +1,12 @@
-# Getting Started With Schematics
+# Custom schematics for use with Angular CLI
+Demo schematic implementation of a custom angular component.
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
-
-### Testing
-
-To test locally, install `@angular-devkit/schematics` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
-
-Check the documentation with
-```bash
-schematics --help
+### Usage:
+In your angular / nx app
 ```
-
-### Unit Testing
-
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
+npm i davidstrahm/demo-collection --save-Dev
 ```
-
-That's it!
- 
+You should now be able to generate the custom-component with this command:
+```
+ng g demo-collection:custom-component DemoPage
+```
